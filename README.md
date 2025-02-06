@@ -14,9 +14,11 @@ security-tips.json: Archivo JSON para almacenar y cargar tips y recomendaciones 
 
 ### Pasos:
 1. Clona el repositorio:
-```git clone https://github.com/paobeb/ProyectoFinal-Balderas.git```
-2. Abre el archivo index.html en el navegador.
-3. Ingresa tu nombre y el presupuesto inicial.
+```
+git clone https://github.com/paobeb/ProyectoFinal-Balderas.git
+```
+3. Abre el archivo index.html en el navegador.
+4. Ingresa tu nombre y el presupuesto inicial.
 Registra tus gastos y utiliza las herramientas de filtrado según sea necesario.
 
 ### Autora
