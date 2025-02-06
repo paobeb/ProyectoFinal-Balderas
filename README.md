@@ -21,8 +21,8 @@ git clone https://github.com/paobeb/ProyectoFinal-Balderas.git
 4. Ingresa tu nombre y el presupuesto inicial.
 Registra tus gastos y utiliza las herramientas de filtrado según sea necesario.
 
-### Autora
+## Autora
 Paola Balderas
 
-### Dirección del Sitio Web
+## Dirección del Sitio Web
 [github.com/paobeb/ProyectoFinal-Balderas](https://github.com/paobeb/ProyectoFinal-Balderas)
