@@ -18,8 +18,8 @@ security-tips.json: Archivo JSON para almacenar y cargar tips y recomendaciones 
 git clone https://github.com/paobeb/ProyectoFinal-Balderas.git
 ```
 3. Abre el archivo index.html en el navegador.
-4. Ingresa tu nombre y el presupuesto inicial.
-Registra tus gastos y utiliza las herramientas de filtrado según sea necesario.
+4. Selecciona la cantidad de caracteres deseada para tu contraseña, y las características deseadas (mínimo 1 necesita ser seleccionado).
+5. exporta y elimina tu historial.
 
 ## Autora
 Paola Balderas
