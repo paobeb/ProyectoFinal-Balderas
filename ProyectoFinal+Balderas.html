@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>PassPal</title>
+</head>
+<body>
+<div class="passfill">
+    <main>
+        <button id="theme-toggle">Switch Theme</button>
+        <h1>PassPal</h1>
+        <p>Need a password? PassPal is here to help!</p>
+    </main>
+    <section class="Password-Result">
+        <article class="Password-Result-Title">
+            Result:
+        </article>
+        <article class="Password-Result-Click" id="Result">
+            <label for="final-password"></label>
+            <input type="text" id="final-password" placeholder="Click on the Generate Password button">
+            <button id="CopyPassword" onclick="passwordcopied()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+            </svg></button>
+        </article>
+    </section>
+    <section class="Password-Length" data-min="4" data-max="30">
+        <article class="Password-Length-Title">
+            Length:&nbsp; <span id="SliderValue"></span>
+        </article>
+    </section>
+    <article class="Password-Length-Slider" id="LengthSlider">
+        <!--            <label for="LengthSlider>"<input type="range" min="4" max="30" value="8" class="slider" id="LengthSlider"></label> -->
+        <label for="passwordlengthtext"><input type="number" id="passwordlengthtext" placeholder="8"></label>
+    </article>
+    <article class="Password-Settings">
+            <span class="Password-Settings-Title">
+                Settings
+            </span>
+    </article>
+    <article class="Password-Settings-Toggle">
+        <label class="switch">
+            <input type="checkbox" id="lowercase">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-switch-text">Include Lowercase</span>
+    </article>
+
+    <article class="Password-Settings-Toggle">
+        <label class="switch">
+            <input type="checkbox" id="uppercase">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-switch-text">Include Uppercase</span>
+    </article>
+
+    <article class="Password-Settings-Toggle">
+        <label class="switch">
+            <input type="checkbox" id="numbers">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-switch-text">Include Numbers</span>
+    </article>
+
+    <article class="Password-Settings-Toggle">
+        <label class="switch">
+            <input type="checkbox" id="symbols">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-switch-text">Include Symbols</span>
+    </article>
+
+    <article class="Security Tips">
+        <ul id="Security-Tips"></ul>
+    </article>
+    <section class="Password-Button">
+        <article class="Password-Button-Container">
+            <button class="Password-Button-Container-Button" onclick="RangeAlert()">Generate Password</button>
+        </article>
+    </section>
+    <section class="Password-Check">
+        <h3>Test the strength of your passwords</h3>
+        <article class="Password-Check-Title">
+            <input type="text" id="ManualPassword" placeholder="Enter a password to test">
+            <button id="ManualPasswordCheck">Test My Password Strength</button>
+            <button id="GeneratedPasswordCheck">Check Generated Password</button>
+        </article>
+    </section>
+    <section class="Password-History">
+        <h3>Past Generated Passwords</h3>
+        <ul id="history-list"></ul>
+        <article class="Password-Button-Container">
+            <button class="history-button" id="clear-history">Clear History</button>
+            <button class="history-button" id="export-history">Export History</button>
+        </article>
+    </section>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+<script src="index.js"></script>
+</html>

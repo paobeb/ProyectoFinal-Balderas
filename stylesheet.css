@@ -1,0 +1,546 @@
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background: linear-gradient(to right, #52796F, #354f52 98%);
+    font-family: "Open Sans", sans-serif;
+    color: #cad2c5;
+}
+
+body.dark-mode h1 {
+    text-align: center;
+    line-height: 10px;
+}
+
+body.dark-mode p {
+    text-align: center;
+}
+
+body.dark-mode .passfill {
+    width: 60%;
+    background-color: #2f3e46;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+body.dark-mode .Password-Result-Title {
+    margin-bottom: 5px;
+}
+
+body.dark-mode .Password-Result-Click {
+    background: #394C56;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    height: 100%;
+    line-height: 75px;
+    text-align: center;
+    width: 100%;
+}
+
+body.dark-mode #final-password {
+    width: 90%;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+body.dark-mode #CopyPassword {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #cad2c5;
+    align-items: center;
+}
+
+body.dark-mode .Password-Length {
+    align-items: center;
+    border-radius: 8px;
+    height: 30px;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+body.dark-mode #passwordlengthtext {
+    background-color: #cad2c5;
+    border-radius: 5px;
+    border: none;
+    color: #2f3e46;
+    width: 98%;
+    height: 25px;
+    font-size: 16px;
+}
+
+body.dark-mode .slider {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+body.dark-mode .slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+    height: 20px;
+    width: 20px;
+    background: #cad2c5;
+    border-radius: 50%;
+}
+
+body.dark-mode .slider::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    height: 5px;
+    align-content: center;
+}
+
+body.dark-mode .Password-Settings {
+    margin-top: 20px;
+}
+
+body.dark-mode .Password-Settings-Toggle {
+    align-items: center;
+    background: #394C56;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    width: 96%;
+    display: flex;
+}
+
+body.dark-mode .Password-Button-Container-Button {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    border: none;
+    border-radius: 8px;
+    color: #cad2c5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 100%;
+}
+
+body.dark-mode .history-button {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    border: none;
+    border-radius: 8px;
+    color: #cad2c5;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 49%;
+    display: inline-block;
+}
+
+body.dark-mode #theme-toggle {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    border: none;
+    border-radius: 8px;
+    color: #cad2c5;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 35%;
+    display: inline-block;
+}
+
+body.dark-mode #ManualPasswordCheck {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    border: none;
+    border-radius: 5px;
+    color: #cad2c5;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 25px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    display: inline-block;
+    width: 56%;
+}
+
+body.dark-mode #GeneratedPasswordCheck {
+    background: linear-gradient(to right, #84A98C, #52796F 98%);
+    border: none;
+    border-radius: 5px;
+    color: #cad2c5;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    letter-spacing: 3px;
+    margin: 5px 0 20px;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    display: inline-block;
+    width: 100%;
+
+}
+
+body.dark-mode #ManualPassword {
+    background-color: #cad2c5;
+    border-radius: 5px;
+    border: none;
+    color: #2f3e46;
+    width: 42%;
+    height: 25px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.swal2-popup.dark-mode {
+    background-color: #2f3e46;
+    color: #cad2c5;
+}
+
+.swal2-popup.dark-mode .swal2-title {
+    color: #84A98C;
+}
+
+.swal2-popup.dark-mode .swal2-confirm {
+    background-color: #84A98C;
+    color: #2f3e46;
+}
+
+.swal2-popup.dark-mode .swal2-cancel {
+    background-color: #52796F;
+    color: #cad2c5;
+}
+
+.Password-Settings-Toggle {
+    display: flex;
+    align-items: center;
+    background: #E9EDC9);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #84A98C;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+
+body.dark-mode .toggle-switch-text {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #cad2c5);
+}
+
+/* Light Theme */
+body.light-mode {
+    background: linear-gradient(to right, #F2F5E0, #DDE3C9 98%);
+    font-family: "Open Sans", sans-serif;
+    color: #D4A373;
+}
+
+body.light-mode h1 {
+    text-align: center;
+    line-height: 10px;
+}
+
+body.light-mode p {
+    text-align: center;
+}
+
+body.light-mode .passfill {
+    width: 60%;
+    background-color: #F2F5E0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    min-width: 400px;
+    color: #D4A373;
+}
+
+body.light-mode .Password-Result-Title {
+    margin-bottom: 5px;
+}
+
+body.light-mode .Password-Result-Click {
+    background: #E9EDC9;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    height: 100%;
+    line-height: 75px;
+    text-align: center;
+    width: 100%;
+    color: #E9EDC9;
+}
+
+body.light-mode #CopyPassword {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #D4A373;
+    align-items: center;
+}
+
+body.light-mode #final-password {
+    width: 90%;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #D4A373;
+}
+
+body.light-mode .Password-Length {
+    align-items: center;
+    border-radius: 8px;
+    height: 30px;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+body.light-mode #passwordlengthtext {
+    background-color: #E9EDC9;
+    border-radius: 5px;
+    border: none;
+    color: #D4A373;
+    width: 98%;
+    height: 25px;
+    font-size: 16px;
+}
+
+body.light-mode h1 {
+    text-align: center;
+    line-height: 10px;
+    color: #D4A373;
+}
+
+body.light-mode p {
+    text-align: center;
+    color: #D4A373;
+}
+
+body.light-mode .Password-Settings {
+    margin-top: 20px;
+}
+
+body.light-mode .Password-Settings-Toggle {
+    align-items: center;
+    background: #E9EDC9;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    color: #D4A373;
+}
+
+body.light-mode .Password-Button-Container-Button {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 8px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 100%;
+}
+
+body.light-mode .Password-Button-Container-Button {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 8px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 100%;
+}
+
+body.light-mode .history-button {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 8px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 49%;
+    display: inline-block;
+}
+
+body.light-mode #theme-toggle {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 8px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    width: 35%;
+    display: inline-block;
+}
+
+body.light-mode #ManualPasswordCheck {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 5px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 25px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    display: inline-block;
+    width: 56%;
+}
+
+body.light-mode #GeneratedPasswordCheck {
+    background: linear-gradient(to right, #E9EDC9, #DDE3C9 98%);
+    border: none;
+    border-radius: 5px;
+    color: #D4A373;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    letter-spacing: 3px;
+    margin: 5px 0 20px;
+    text-transform: uppercase;
+    transition: all .15s ease;
+    display: inline-block;
+    width: 100%;
+
+}
+
+body.light-mode #ManualPassword {
+    background-color: #E9EDC9;
+    border-radius: 5px;
+    border: none;
+    color: #D4A373;
+    width: 42%;
+    height: 25px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.swal2-popup.light-mode {
+    background-color: #fff;
+    color: #D4A373;
+}
+
+.swal2-popup.light-mode .swal2-title {
+    color: #D4A373;
+}
+
+.swal2-popup.light-mode .swal2-confirm {
+    background-color: #D4A373;
+    color: #fff;
+}
+
+.swal2-popup.light-mode .swal2-cancel {
+    background-color: #E9EDC9;
+    color: #D4A373;
+}
