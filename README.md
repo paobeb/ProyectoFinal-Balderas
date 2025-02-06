@@ -2,7 +2,7 @@
 
 Este repositorio contiene el proyecto final que fue desarrollado como parte de la comisión #63335 del curso de JavaScript en Coderhouse. El objetivo principal es proporcionar una herramienta interactiva para generar contraseñas, utilizando JavaScript para crearlas.
 
-## Archivos del Proyecto##
+## Archivos del Proyecto
 ProyectoFinal+Balderas.html: Estructura HTML de la interfaz del usuario.
 stylesheet.css: Hoja de estilos para el diseño visual.
 index.js: Lógica principal del proyecto en JavaScript.
